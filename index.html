@@ -43,7 +43,7 @@
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h2 class="title is-1 publication-title">Exo2Ego: Exocentric Knowledge Guided MLLM for Egocentric Video Understanding</h2>
-                        <h2 style="font-weight: bold; font-size: 30px;">CVPR 2025 Submission</h2>
+                        <h2 style="font-weight: bold; font-size: 30px; color: red;">CVPR 2025 Submission</h2>
                         <br>
                         <!-- <span class="author-block">
                             <a target="_blank"
@@ -79,16 +79,16 @@
                                             <span class="icon">
                                                 <i class="fas fa-file-pdf"></i>
                                             </span>
-                                            <span>Paper</span>
+                                            <span>Paper (Coming)</span>
                                         </a>
                                     </span>
                                     <span class="link-block">
                                         <a target="_blank" href=""
                                             class="external-link button is-normal is-rounded is-dark">
                                             <span class="icon">
-                                                <i class="fas fa-folder-open"></i>
+                                                <i class="fas fa-database"></i>
                                             </span>
-                                            <span>Data</span>
+                                            <span>Data (Coming)</span>
                                         </a>
                                     </span>
 
@@ -100,7 +100,7 @@
                                             <span class="icon">
                                                 <i class="fab fa-github"></i>
                                             </span>
-                                            <span>Code</span>
+                                            <span>Code (Coming)</span>
                                         </a>
                                     </span>
                                     <br />
@@ -114,15 +114,6 @@
             </div>
         </div>
     </section>
-
-    <div class="columns is-centered has-text-centered">
-        <div class="column">
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AZeS3C_S_3M?si=lIUkwqr355KCegxV"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe> -->
-        </div>
-    </div>
 
     <section class="section" style="background-color:#efeff081">
         <div class="container is-max-desktop">
@@ -148,8 +139,8 @@ Extensive experimental results on multiple egocentric tasks reveal that the exis
         <div class="container is-max-desktop">
                 <div class="columns is-centered has-text-centered">
                     <div class="row is-full-width">
-                        <h2 class="title is-3">Pipeline</h2>
-                        <img src="assets/images/modelv2.png" class="interpolation-image" alt=""
+                        <h2 class="title is-3">Method</h2>
+                        <img src="assets/images/model.jpg" class="interpolation-image" alt=""
                             style="display: block; margin-left: auto; margin-right: auto" width="1000" height="900" />
                         <br>
 
@@ -158,19 +149,34 @@ Extensive experimental results on multiple egocentric tasks reveal that the exis
         </div>
     </section>
 
+    <section class="section" style="background-color:#ffffff">
+        <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3">Experiment</h2>
+                        <img src="assets/images/leida.jpg" class="interpolation-image" alt=""
+                            style="display: block; margin-left: auto; margin-right: auto" width="500" height="500" />
+                        <br>
+
+                    </div>
+                </div>
+        </div>
+    </section>
+
     <!--Conclusion-->
-    <section class="section" style="background-color:#efeff081">
+    <section class="section" style="background-color:#efeff081 ">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
-            <div class="rows is-centered ">
+                <div class="column">
                         <h2 class="title is-3"><span class="dvima">Conclusion</span></h2>
-
+                        <div class="content has-text-justified">
                         <p style="font-size: 125%">
-  --
+                            In this paper, we aim to advance egocentric video understanding by leveraging extensive exocentric knowledge integrated with MLLMs. To this end, we first construct a synchronized first- and third-person video-text dataset based on Ego-Exo4D. Next, we design a progressive three-stage training pipeline to learn the mappings between exocentric and egocentric domains. Additionally, to enhance instruction-following abilities for downstream tasks, we introduce egocentric instruction data. To comprehensively evaluate egocentric video understanding performance, we propose a new benchmark, EgoBench, derived from multiple sources. Experimental results have validated that our Exo2Ego framework outperforms existing MLLMs.
                         </p>
 
-                </div>
+                        </div>
 
+                </div>
             </div>
         </div>
     </section>

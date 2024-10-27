@@ -14,7 +14,7 @@ body {
 section {
     width: 100%;
     /* 可选：设置背景颜色以便于观察 */
-    padding: 20px;
+    padding: 0px;
     /* 可选：设置内边距 */
     box-sizing: border-box;
     /* 可选：确保内边距和边框不会增加元素的宽度 */
