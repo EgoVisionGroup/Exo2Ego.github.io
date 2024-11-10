@@ -123,25 +123,34 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p style="font-size: 125%">
-                            AI personal assistants deployed through robots or wearables need embodied understanding to collaborate effectively with humans. Existing Multimodal Large Language Models (MLLMs) focus on third-person (exocentric) vision, ignoring the uniqueness of first-person (egocentric) videos. And high acquisition costs limit data size, which in turn impairs the performance of MLLMs.
-To address the above issues, we propose to learn the mapping between exocentric and egocentric data and utilize the rich exocentric knowledge embedded in existing MLLMs to guide the understanding of egocentric videos. Specifically, we create <b>Ego-ExoClip</b>, a synchronized first- and third-person video-text dataset comprising 1.1M ego-exo clip-text pairs well-chosen from Ego-Exo4D. 
-Then, we design a progressive training pipeline, including three stages: <b>Teacher Self-Preparation, Teacher-Student Instruction, and Student Self-Practice.</b> Besides, we also propose instruction-tuning data to enhance the model's instruction-following capabilities, as well as a egocentric video understanding benchmark <b>EgoBench</b> for comprehensive evaluation.
-Extensive experimental results on multiple egocentric tasks reveal that the existing MLLMs are far from satisfactory in egocentric video understanding, while our model largely surpasses these leading models.
-                        </p>
-                    </div>
+                            AI personal assistants, deployed through robots or wearables, require embodied understanding to collaborate effectively with humans. Current Multimodal Large Language Models (MLLMs) primarily focus on third-person (exocentric) vision, overlooking the unique aspects of first-person (egocentric) videos. Additionally, high acquisition costs limit data size, impairing MLLM performance. To address these challenges, we propose learning the mapping between exocentric and egocentric domains, leveraging the extensive exocentric knowledge within existing MLLMs to enhance egocentric video understanding. To this end, we introduce <b>Ego-ExoClip</b>, a synchronized dataset comprising 1.1M ego-exo clip-text pairs sourced from Ego-Exo4D. Our approach features a progressive training pipeline with three stages: <b>Teacher Self-Preparation, Teacher-Student Guidance, and Student Self-Practice</b>. Additionally, we propose a instruction-tuning data <b>EgoIT</b> to strengthen the model's instruction-following capabilities, along with the <b>EgoBench</b> benchmark for thorough evaluation. Extensive experiments across multiple egocentric tasks reveal that existing MLLMs perform inadequately in egocentric video understanding, while our model significantly outperforms these leading models.                        </p>
+                    
+                        </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <section class="section" style="background-color: #ffffff">
+        <!-- <div class="container is-max-desktop"> -->
+                <div class="columns is-centered has-text-centered">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3">Data Overview</h2>
+                        <img src="assets/images/gendatav5.svg" class="interpolation-image" alt=""
+                            style="display: block; margin-left: auto; margin-right: auto" width="1000" height="auto" />
+                        <br>
+                </div>
+                </div>
+        <!-- </div> -->
+    </section>
+
+    <section class="section" style="background-color: #efeff081">
         <div class="container is-max-desktop">
                 <div class="columns is-centered has-text-centered">
                     <div class="row is-full-width">
                         <h2 class="title is-3">Method</h2>
-                        <img src="assets/images/model.jpg" class="interpolation-image" alt=""
-                            style="display: block; margin-left: auto; margin-right: auto" width="1000" height="900" />
+                        <img src="assets/images/modelv3.svg" class="interpolation-image" alt=""
+                            style="display: block; margin-left: auto; margin-right: auto" width="1100" height="auto" />
                         <br>
 
                     </div>
@@ -154,7 +163,7 @@ Extensive experimental results on multiple egocentric tasks reveal that the exis
                 <div class="columns is-centered has-text-centered">
                     <div class="row is-full-width">
                         <h2 class="title is-3">Experiment</h2>
-                        <img src="assets/images/leida.jpg" class="interpolation-image" alt=""
+                        <img src="assets/images/leida.svg" class="interpolation-image" alt=""
                             style="display: block; margin-left: auto; margin-right: auto" width="500" height="500" />
                         <br>
 
@@ -171,8 +180,7 @@ Extensive experimental results on multiple egocentric tasks reveal that the exis
                         <h2 class="title is-3"><span class="dvima">Conclusion</span></h2>
                         <div class="content has-text-justified">
                         <p style="font-size: 125%">
-                            In this paper, we aim to advance egocentric video understanding by leveraging extensive exocentric knowledge integrated with MLLMs. To this end, we first construct a synchronized first- and third-person video-text dataset based on Ego-Exo4D. Next, we design a progressive three-stage training pipeline to learn the mappings between exocentric and egocentric domains. Additionally, to enhance instruction-following abilities for downstream tasks, we introduce egocentric instruction data. To comprehensively evaluate egocentric video understanding performance, we propose a new benchmark, EgoBench, derived from multiple sources. Experimental results have validated that our Exo2Ego framework outperforms existing MLLMs.
-                        </p>
+                            In this paper, we aim to advance egocentric video understanding by leveraging extensive exocentric knowledge integrated with MLLMs. To achieve this, we first construct a synchronized first- and third-person video-text dataset, Ego-ExoClip, based on Ego-Exo4D. Next, we design a progressive three-stage training pipeline to learn the mappings between exocentric and egocentric domains. Additionally, to enhance instruction-following abilities for downstream tasks, we introduce the egocentric instruction data EgoIT. To comprehensively evaluate egocentric video understanding performance, we propose a new benchmark, EgoBench, derived from multiple sources. Experimental results validate that our Exo2Ego framework outperforms existing MLLMs.                        </p>
 
                         </div>
 
