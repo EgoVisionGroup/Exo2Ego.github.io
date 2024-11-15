@@ -86,6 +86,15 @@
                                         <a target="_blank" href=""
                                             class="external-link button is-normal is-rounded is-dark">
                                             <span class="icon">
+                                                <i class="fas fa-play-circle"></i>
+                                            </span>
+                                            <span>Video (Coming)</span>
+                                        </a>
+                                    </span>
+                                    <span class="link-block">
+                                        <a target="_blank" href=""
+                                            class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
                                                 <i class="fas fa-database"></i>
                                             </span>
                                             <span>Data (Coming)</span>
@@ -103,6 +112,7 @@
                                             <span>Code (Coming)</span>
                                         </a>
                                     </span>
+                
                                     <br />
 
                                 </div>
@@ -121,10 +131,41 @@
             <div class="columns is-centered has-text-centered">
                 <div class="column">
                     <h2 class="title is-3">Abstract</h2>
+                    <div style="display: flex; justify-content: center; gap: 40px;">
+                        <!-- 图片容器 -->
+                        <div style="text-align: center;">
+                            <img src="assets/images/stage1.webp" class="interpolation-image" alt="" width="280" height="auto" 
+                                 style="border-radius: 15px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;" 
+                                 onmouseover="this.style.transform='scale(1.05)'" 
+                                 onmouseout="this.style.transform='scale(1)'" />
+                            <p style="font-size: 125%; margin-top: 10px;"><b>Teacher Self-Preparation</b></p>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <img src="assets/images/stage2.webp" class="interpolation-image" alt="" width="280" height="auto" 
+                                 style="border-radius: 15px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;" 
+                                 onmouseover="this.style.transform='scale(1.05)'" 
+                                 onmouseout="this.style.transform='scale(1)'" />
+                            <p style="font-size: 125%; margin-top: 10px;"><b>Teacher-Student Guidance</b></p>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <img src="assets/images/stage3.webp" class="interpolation-image" alt="" width="280" height="auto" 
+                                 style="border-radius: 15px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;" 
+                                 onmouseover="this.style.transform='scale(1.05)'" 
+                                 onmouseout="this.style.transform='scale(1)'" />
+                            <p style="font-size: 125%; margin-top: 10px;"><b>Student Self-Practice</b></p>
+                        </div>
+                    </div>
+                    <!-- <div style="display: flex; justify-content: center; gap: 50px;">
+                        <img src="assets/images/stage1.webp" class="interpolation-image" alt="" width="280" height="auto" />
+                        <img src="assets/images/stage2.webp" class="interpolation-image" alt="" width="280" height="auto" />
+                        <img src="assets/images/stage3.webp" class="interpolation-image" alt="" width="280" height="auto" />
+                    </div> -->
+                    <br>
                     <div class="content has-text-justified">
                         <p style="font-size: 125%">
-                            AI personal assistants, deployed through robots or wearables, require embodied understanding to collaborate effectively with humans. Current Multimodal Large Language Models (MLLMs) primarily focus on third-person (exocentric) vision, overlooking the unique aspects of first-person (egocentric) videos. Additionally, high acquisition costs limit data size, impairing MLLM performance. To address these challenges, we propose learning the mapping between exocentric and egocentric domains, leveraging the extensive exocentric knowledge within existing MLLMs to enhance egocentric video understanding. To this end, we introduce <b>Ego-ExoClip</b>, a synchronized dataset comprising 1.1M ego-exo clip-text pairs sourced from Ego-Exo4D. Our approach features a progressive training pipeline with three stages: <b>Teacher Self-Preparation, Teacher-Student Guidance, and Student Self-Practice</b>. Additionally, we propose a instruction-tuning data <b>EgoIT</b> to strengthen the model's instruction-following capabilities, along with the <b>EgoBench</b> benchmark for thorough evaluation. Extensive experiments across multiple egocentric tasks reveal that existing MLLMs perform inadequately in egocentric video understanding, while our model significantly outperforms these leading models.                        </p>
-                    
+                            AI personal assistants, deployed through robots or wearables, require embodied understanding to collaborate effectively with humans. Current Multimodal Large Language Models (MLLMs) primarily focus on third-person (exocentric) vision, overlooking the unique aspects of first-person (egocentric) videos. Additionally, high acquisition costs limit data size, impairing MLLM performance. To address these challenges, we propose learning the mapping between exocentric and egocentric domains, leveraging the extensive exocentric knowledge within existing MLLMs to enhance egocentric video understanding. To this end, we introduce <b>Ego-ExoClip</b>, a pre-training dataset comprising 1.1M synchronized ego-exo clip-text pairs derived from Ego-Exo4D. Our approach features a progressive training pipeline with three stages: <b>Teacher Self-Preparation, Teacher-Student Guidance, and Student Self-Practice.</b> Additionally, we propose an instruction-tuning data <b>EgoIT</b> from multiple sources to strengthen the model's instruction-following capabilities, along with the <b>EgoBench</b> benchmark comprising eight different tasks for thorough evaluation. Extensive experiments across diverse egocentric tasks reveal that existing MLLMs perform inadequately in egocentric video understanding, while our model significantly outperforms these leading models.                    
                         </div>
                 </div>
             </div>
@@ -143,6 +184,8 @@
                 </div>
         <!-- </div> -->
     </section>
+
+
 
     <section class="section" style="background-color: #efeff081">
         <div class="container is-max-desktop">
@@ -180,8 +223,7 @@
                         <h2 class="title is-3"><span class="dvima">Conclusion</span></h2>
                         <div class="content has-text-justified">
                         <p style="font-size: 125%">
-                            In this paper, we aim to advance egocentric video understanding by leveraging extensive exocentric knowledge integrated with MLLMs. To achieve this, we first construct a synchronized first- and third-person video-text dataset, Ego-ExoClip, based on Ego-Exo4D. Next, we design a progressive three-stage training pipeline to learn the mappings between exocentric and egocentric domains. Additionally, to enhance instruction-following abilities for downstream tasks, we introduce the egocentric instruction data EgoIT. To comprehensively evaluate egocentric video understanding performance, we propose a new benchmark, EgoBench, derived from multiple sources. Experimental results validate that our Exo2Ego framework outperforms existing MLLMs.                        </p>
-
+                            In this paper, we aim to improve egocentric video understanding by transferring extensive exocentric knowledge embedded in MLLMs at low cost. To achieve this, we first construct a diverse clip-text dataset, Ego-ExoClip, with synchronized ego-exo perspectives. We then design a progressive three-stage training pipeline to effectively learn the mappings between the two domains. To enhance instruction-following abilities for downstream tasks, we introduce the egocentric instruction-tuning data EgoIT. Moreover, we propose EgoBench, a benchmark designed to comprehensively evaluate the embodied cognitive abilities of existing MLLMs. Extensive experiments have validated the superiority of our Exo2Ego framework for egocentric tasks. 
                         </div>
 
                 </div>
